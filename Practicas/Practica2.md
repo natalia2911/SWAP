@@ -39,7 +39,7 @@ Hay que llevar a cabo las siguientes tareas
 **4. Establecer una tarea en cron que se ejecute cada hora para mantener
 actualizado el contenido del directorio /var/www entre las dos máquinas.**
 
-	A partir de ahora la maquina “ubuntu2” hará de server principal. Accedemos a “/etc/crontab”, en crontab están las tareas que se ejecutan de forma automatizada. Añadimos desde el servidor principal (ubuntu2) un proceso “rsync -avz -e ssh 192.18.56.10:/var/www/ /var/www/”, para que cada hora copie el contenido de “/var/www” del server secundario (donde estamos trabajando), al servidor principal que es el que se muestra al público.
+	A partir de ahora la maquina “ubuntu1” hará de server principal. Accedemos en la maquina “ubuntu2” a “/etc/crontab”, en crontab están las tareas que se ejecutan de forma automatizada. Añadimos desde el servidor secundario (ubuntu2) un proceso “rsync -avz -e ssh 192.18.56.10:/var/www/ /var/www/”, para que cada hora copie el contenido de “/var/www” del server principal (donde atendemos a nuestros clientes), al servidor secundario que nos hará de copia de seguridad.
 ![crontab](https://github.com/mati3/SWAP/blob/master/Imagenes/P2_7.PNG)
 
 	Para probar que lo hace bien, lo ponemos momentáneamente para que se copie cada minuto, capturamos la pantalla con algún cambio en el equipo “ubuntu1”.
