@@ -68,5 +68,5 @@ Resultados para pound:
 
 Seguimos manteniendo nuestra misma opinión, el mejor balanceador es haproxy, su time taken for tests es el menor, los anteriores son muy similares, mientras que el pound cuando le pones muchas peticiones tarda mucho en procesar los datos.
 	
-Practica realizada por José María Aguilera Varea y María Matilde Cabrera González.
+Practica realizada por José María Aguilera Barea y María Matilde Cabrera González.
 
