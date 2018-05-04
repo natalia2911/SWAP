@@ -12,6 +12,7 @@ Reiniciamos el servicio apache:
 
 Creamos el directorio ssl en la ruta “etc/apache2/ssl”, nosotros ya lo teníamos creado de antes así que nos saltamos el paso.
 Configuramos el dominio para los certificados: (Nos ha pedido una serie de datos que rellenamos según el guion de prácticas).
+
 ![openssl](https://github.com/mati3/SWAP/blob/master/Imagenes/P4_03.PNG)
 
 Editamos el archivo de configuración del sitio default-ssl, orden “sudo nano /etc/apache2/sites-abailable/default-ssl”, y agregamos las líneas que se ven:
@@ -24,6 +25,7 @@ Reiniciamos apache “service apache2 reload” y desde el navegador comprobamos
 ![ssl](https://github.com/mati3/SWAP/blob/master/Imagenes/P4_06.PNG)
 
 Ahora lo comprobamos desde el mismo servidor:
+
 ![ssl](https://github.com/mati3/SWAP/blob/master/Imagenes/P4_07.PNG)
 
 Una vez conseguido su funcionamiento en la maquina 1, copiamos su certificado en la maquina 2 y en el balanceador. Para ello primero hemos tenido que cambiar el permiso del root. Ejecutamos “sudo nano /etc/ssh/sshd_config”, una vez dentro buscamos la línea “PermitRootLogin prohibit-password” y la cambiamos por “PermitRootLogin yes”, posteriormente reiniciamos el servicio sshd con “service sshd restart”. 
@@ -33,6 +35,7 @@ Vamos a la maquina dos, hay varias formas de copiar los archivos, hemos elegido 
 De igual forma pasamos el certificado al balanceador nginx, este no tiene creada la carpeta ssl, así que antes de nada hay que crearla y ya podremos ejecutar la orden anterior sin problema.
 Hemos comprobado que podemos acceder desde el balanceador a ambas maquinas con “curl -k https://ip_de_cada_maquina”, de igual forma entre las maquinas.
 Para acceder desde una tercera maquina al balanceador y que nos sirva peticiones, hemos tenido que modificar el siguiente archivo, para que acepte peticiones https:
+
 ![script](https://github.com/mati3/SWAP/blob/master/Imagenes/P4_14.PNG)
 
 Comprobamos que desde el navegador podemos ver tanto las peticiones http como https.
@@ -49,7 +52,7 @@ Añadimos a crontab que se ejecute cada vez que se inicie sesión con la orden �
 
 ![crontab](https://github.com/mati3/SWAP/blob/master/Imagenes/P4_11.PNG)
 
-Hemos comprobado que seguimos viendo la pagina “https://hola.html” del servidor que hemos modificado el cortafuegos desde otra máquina diferente. Además, hemos comprobado los puertos que hay abiertos y que demonios los tienen en uso:
+Hemos comprobado que seguimos viendo la pagina https://hola.html del servidor que hemos modificado el cortafuegos desde otra máquina diferente. Además, hemos comprobado los puertos que hay abiertos y que demonios los tienen en uso:
 
 ![crontab](https://github.com/mati3/SWAP/blob/master/Imagenes/P4_12.PNG)
 
