@@ -17,3 +17,31 @@ Para comenzar a usar MP2 podemos ver la pagina ¡[mp2]( http://pm2.keymetrics.io
 El modo de clúster permite escalar las aplicaciones a través de todas las CPU disponibles, sin modificaciones de código. Esto aumenta enormemente el rendimiento y la confiabilidad de sus aplicaciones, dependiendo de la cantidad de CPU disponibles.
 
 También hemos encontrado Microsoft BizTalk Server, servidor de alta disponibilidad de Microsoft, este usa la aplicación Microsoft Operations Framework (MOF), la cual ofrece una administración fácil de los diferentes servicios TI, teniendo du propia biblioteca TechNet. Dejamos un enlace a su página principal ![microsoft](https://msdn.microsoft.com).
+
+
+# Ejercicio T2.3:
+### ¿Cómo analizar el nivel de carga de cada uno de los subsistemas en el servidor? Buscar herramientas y aprender a usarlas...¡o recordar cómo usarlas!
+
+**Tenemos herramientas cómo:**
+
+- Nagios es un programa de monitoreo de host/servicio/red.
+- Munin es una herramienta de monitoreo de recursos en red que analiza el rendimiento
+- Ganglia es un sistema de monitoreo distribuido y escalable para sistemas informáticos de alto rendimiento como por ejemplo clústeres.
+- Zabbix es una herramienta de monitoreo de varias redes, así como del registro del estado de los servicios en red. Lo hemos usado en alguna práctica.
+- Jetstress 2010 de Exchange Server ![technet](https://technet.microsoft.com) , herramienta para la evaluación de la escalabilidad y el rendimiento de nuestro sistema, se hacen las pruebas antes de colocar los datos en producción en el servidor, está diseñado para entornos de prueba.
+
+
+# Ejercicio T2.4:
+### Buscar ejemplos de balanceadores software y hardware (productos comerciales).
+Como balanceadores hardware vamos a nombrar:
+
+- Servidores Dell, ejemplo modelo Dell PowerEdge R430, ofrecido por la empresa hostalia como servidor hardware de alto rendimiento ¡[hostalia](https://www.hostalia.com/dedicados/?gclid=EAIaIQobChMI3bqE3fD62QIVEpIYCh0TUwucEAAYASAAEgIU0fD_BwE)
+- Servidores dedicados de la empresa OVH, como SP-32, Host-64L, Mc-64-OC ¡[ovh]( https://www.ovh.es/servidores_dedicados/)
+
+Balanceador software hay muchos, Nginx o Haproxy que hemos usado en la practica 3, Cisco Ace, CISCO IOS (si tenemos un router CISCO, tenemos un balanceador) , Coyote Point, Barracuda (incluye prevención de intrusiones), Zen Load Balancer, etc.
+### Buscar productos comerciales para servidores de aplicaciones.
+Servidores de aplicación Java como Weblogic de Oracle, JBoss Enterprise Application Platform de Red Hat, WebSphere de IBM.
+
+Servidores de aplicaciones en la nube de la empres 1&1 ¡[1&1]( https://www.1and1.es/cloud-app-center/aplicaciones-cloud)
+### Buscar productos comerciales para servidores de almacenamiento.
+Empresa OVH  ofrece servidores de almacenamiento como FS-12T, FS-30T, FS-MAX  ¡[ovh](https://www.ovh.es/servidores_dedicados/storage/)
