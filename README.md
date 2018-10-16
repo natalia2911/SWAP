@@ -2,7 +2,7 @@
 
 ### Repositorio para la asignatura Servidores Web de Altas Prestaciones
 
-** La asignatura consta de tres partes **
+**La asignatura consta de tres partes**
 
 - [Ejercicios](https://github.com/mati3/SWAP/tree/master/Ejercicios)
 
