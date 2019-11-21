@@ -1,6 +1,6 @@
 # Ejercicio T2.2:
 
-### Buscar frameworks y librerías para diferentes lenguajes que permitan hacer aplicaciones altamente disponibles con relativa facilidad. Como ejemplo, examina PM2 ![enlace](https://github.com/Unitech/pm2) que sirve para administrar clústeres de NodeJS.
+### Buscar frameworks y librerías para diferentes lenguajes que permitan hacer aplicaciones altamente disponibles con relativa facilidad. Como ejemplo, examina ![PM2](https://github.com/Unitech/pm2) que sirve para administrar clústeres de NodeJS.
 
 Lo primero, vamos a ver que es NodeJS:
 
